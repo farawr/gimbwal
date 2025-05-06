@@ -8,17 +8,24 @@ window.addEventListener('load', () => {
 
 const messages = [
     {
-        text: "plss mau dong",
-        image: "https://i.pinimg.com/736x/1e/7c/6f/1e7c6ff7a0c26f7eaefbce683656193d.jpg"
+        text: "kamu seriusan ngga mau maafin aku?",
+        image: "https://i.pinimg.com/736x/51/00/d1/5100d113098f8617e0986602142533af.jpg"
     },
     {
-        text: "pls klik yg kiri",
-        image: "https://i.pinimg.com/736x/90/73/a9/9073a9359bff531cd830ae7384752934.jpg"
+        text: "aku minta maaf beneran:(",
+        image: "https://i.pinimg.com/736x/70/da/14/70da14aface16bea6f585fd8dbf9e046.jpg"
     },
     {
-        text: "terakhir, kalo \"no\" yauda deh",
-        image: "https://i.pinimg.com/736x/a6/43/f5/a643f5a40db387585b56bc767b66fddb.jpg"
-    }
+        text: "pencet kiri plss",
+        image: "https://i.pinimg.com/736x/55/33/65/55336531569bf9ec16b44bc771b3dd89.jpg"
+    },
+    {
+        text: "sayang? please?",
+        image: "https://i.pinimg.com/736x/41/98/88/419888d941abc75acc17f7e91008c6a7.jpg"
+    },
+    {
+        text: "yaudah deh ini yg terakhir..",
+        image: "https://i.pinimg.com/736x/6e/3e/ee/6e3eee2564e53682b4d315d0cd084285.jpg"       
 ];
 
 function createHeart() {
@@ -121,7 +128,7 @@ function getFarPosition(containerRect, windowWidth, windowHeight, buttonWidth, b
 }
 
 yesBtn.addEventListener('click', () => {
-    title.innerHTML = "HORE!! i knew you would say vqsghvwegdsbjs";
+    title.innerHTML = "YEYYY makasih sayangggg, i love u moreeee";
     document.querySelector('img').src = "https://media.tenor.com/gUiu1zyxfzYAAAAi/good-night-kiss-kiss.gif";
     noBtn.style.display = 'none';
     yesBtn.style.display = 'none';
@@ -129,7 +136,7 @@ yesBtn.addEventListener('click', () => {
 });
 
 noBtn.addEventListener('click', () => {
-    if (noCount < 3) {
+    if (noCount < 5) {
         noCount++;
         title.innerHTML = messages[noCount - 1].text;
         document.querySelector('img').src = messages[noCount - 1].image;
